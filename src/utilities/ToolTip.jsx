@@ -1,18 +1,17 @@
 
-import { DiJavascript1 } from "react-icons/di";
 
-export const ToolTip = () =>{
+
+export const ToolTip = ({icon, tec,tc}) =>{
+
     return(
         <>
-        <div className="flex bg-slate-700 p-2">
+        <div className="inline-block bg-neutral-800 px-2 py-1 mr-1 rounded-md border-2  border-neutral-700" >
             <div className="flex ">
-                <div className="flex">
-                <DiJavascript1/>
+                <div className= {`flex py-1 pr-1 ${tc} `}>
+                {icon}
                 </div>
                 
-                <div className="flex">
-                <span>Javascript</span>
-                </div>
+                <span className="text-neutral-100 py-1">{tec}</span>
             </div>
         </div>            
         </>
