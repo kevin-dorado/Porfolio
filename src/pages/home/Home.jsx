@@ -21,14 +21,14 @@ return(
             <ToolTip icon={<BiLogoTailwindCss size={25} />} tec={"Tailwind"} tc={"text-cyan-300"} href={"https://tailwindcss.com/"}/>
             <ToolTip icon={<DiBootstrap size={25} />} tec={"Bootstrap"} tc={"text-purple-500"} href={"https://getbootstrap.com/"}/>
             <ToolTip icon={<DiJava size={25} />} tec={"Java"} tc={"text-white"} href={"https://www.java.com/es/"}/>
-            <ToolTip icon={<DiVisualstudio size={25} />} tec={"Visual Basic"} tc={"text-violet-600"} href={"https://learn.microsoft.com/es-es/dotnet/visual-basic/"}/>
+            <ToolTip  icon={<DiVisualstudio size={25} />} tec={"Visual Basic"} tc={"text-violet-600"} href={"https://learn.microsoft.com/es-es/dotnet/visual-basic/"}/>
         </div>
     </section>
     <section>
         <h2  className="text-neutral-100 text-xl 
                     mb-4 font-semibold mt-6" >Projects</h2>
         <p className="text-neutral-300 ">In this section you will find some of the projects I have done. Here you can see examples of my work, the technologies I use and the objectives I completed, I hope you like them.</p>
-        <CardProject/>
+        <CardProject img={"/CalPorfolio1.png"} text={"This program allows you to calculate your daily calorie needs, calories to lose fat and calories to gain muscle according to your height, weight, age, gender and activity level. It is made with HTML, JavaScript and Tailwind."} title={"Calories Calculator"}/>
         <CardProject/>
         <CardProject/>
         <CardProject/>
