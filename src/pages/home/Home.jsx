@@ -2,11 +2,12 @@ import { Result } from "postcss"
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { DiJavascript1,DiReact,DiBootstrap,DiJava,DiVisualstudio } from "react-icons/di";
 import { ToolTip } from "../../utilities/ToolTip";
+import { CardProject } from "../../utilities/CardProject";
 const Home= () =>{
 
 return(
 <>
-    <section>
+    <section >
         <h1  className="text-neutral-100 text-2xl
         mb-10 font-semibold" > Hi I'm Kevin 👋</h1>
         <p className="text-neutral-300 ">I am a 20 year old junior web-developer, who was graduated from the Instituto Tecnológico Superior Arias-Balparda and then, at the Jovenes a Programar web-development bootcamp. I love exploring new technologies and expanding my knowledge in the field of web development.</p>
@@ -25,17 +26,12 @@ return(
     </section>
     <section>
         <h2  className="text-neutral-100 text-xl 
-            mb-4 font-semibold mt-6" >Projects</h2>
+                    mb-4 font-semibold mt-6" >Projects</h2>
         <p className="text-neutral-300 ">In this section you will find some of the projects I have done. Here you can see examples of my work, the technologies I use and the objectives I completed, I hope you like them.</p>
-
-        <div className="mt-5 bg-neutral-800 border-2  border-neutral-700 rounded-xl p-3">
-            <div className="">
-                <img src="/CalPorfolio1.png" alt="" className="rounded-lg " />   
-            </div>
-            <h3  className="text-neutral-100 text-xl 
-            mb-4 font-semibold mt-6" >Calories Calculator</h3>
-            <p className="text-neutral-300 ">This program allows you to calculate your daily calorie needs, calories to lose fat and calories to gain muscle according to your height, weight, age, gender and activity level. It is made with HTML, JavaScript and Tailwind.</p>
-        </div>
+        <CardProject/>
+        <CardProject/>
+        <CardProject/>
+        <CardProject/>
     </section>
 </>
 )

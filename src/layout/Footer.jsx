@@ -3,12 +3,17 @@ import {SiGmail} from "react-icons/si";
 export const Footer = () =>{
 return(
     <>
-        <footer className=" my-10">    
-            <div className="flex justify-between">
-                <div className="flex">   
-                    <img src="/klogofondo.png" alt="" className="w-14" />  
+        <footer className="">    
+            <div className="flex justify-around  my-10">
+                <div className=" flex justify-start items-center basis-1/3" >
+                    <p className="text-neutral-600 text-sm ">Made by: @Kevin Dorado</p>
                 </div>
-                <div className="flex justify-end text-neutral-300 mt-5">
+                <div className="flex">  
+                    <a href="#">
+                        <img src="/klogofondo.png" alt="" className="w-14" />  
+                    </a>
+                </div>
+                <div className="flex justify-end items-center text-neutral-300  basis-1/3">
                     <div className="mr-5">
                         <a href="https://www.linkedin.com/in/kevin-dorado-64677a25b/" target="blank">
                             <BsLinkedin/>
@@ -19,7 +24,7 @@ return(
                             <BsGithub/>    
                         </a>  
                     </div>
-                    <div className="mr-2">
+                    <div className="">
                         <a href="mailto:kevindorado2811@gmail.com?subject=Correo desde mi sitio web"  target="blank">
                             <SiGmail/>    
                         </a>  

@@ -4,7 +4,7 @@ const Nav = () => {
     const location = useLocation();
     return(
         <>
-            <nav className="lg:sticky mb-5 mt-4">
+            <nav className="lg:sticky mb-5 mt-4 ">
                 <div className="flex justify-between">
                     <div className=" flex">
                         <div>
