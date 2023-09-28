@@ -1,15 +1,18 @@
 
 
-export const   Certifications = () =>{
+export const   Certifications = ({title,width,height,src}) =>{
 
     return(
         <> 
             <div className="mt-5 bg-neutral-800 border-2  border-neutral-700 rounded-xl p-3 ">
-                <p>Holaaaa</p>
-                <div className="flex">
-                    <embed className="flex-auto" src="Full Stack Software Developer Assessment.pdf" type="application/pdf"/>
-                    <iframe src="https://drive.google.com/file/d/1tNn-3NCwEtmhCbJ__WHeJOAxwkrWCE3h/preview" width="640" height="480" allow="autoplay"></iframe>
+                <div className="flex justify-center">
+                    <iframe src={src} width={width} height={height} allow=""></iframe>
                 </div>
+                <div className="flex justify-center">
+                    <h3  className="text-neutral-100 text-xl 
+                        mb-4 font-semibold mt-6" >{title} </h3>
+                </div>
+                
             </div>
         </>
 
