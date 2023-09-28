@@ -1,4 +1,5 @@
 import { Result } from "postcss"
+import { Certifications } from "../../utilities/Certifications"
 export const Porfolio = () =>{
     return(
         <>
@@ -7,7 +8,9 @@ export const Porfolio = () =>{
                 mb-7 font-semibold" > Porfolio 📖</h1>
                 <p className="text-neutral-300 ">In this section, you will find my portfolio, where you can see my diplomas, titles, and certifications that I have obtained throughout my career. Each of these documents is a testament to my dedication, learning, and growth in various areas of specialization.</p>
             </section>
-
+            <section>
+                <Certifications/>
+            </section>
         </>
     )
 }
