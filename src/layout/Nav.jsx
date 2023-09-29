@@ -8,9 +8,9 @@ const Nav = () => {
                 <div className="flex justify-between">
                     <div className=" flex">
                         <div>
-                        <Link to="/"  className={`mr-2 ${location.pathname === "/" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>About Me</span></Link>
-                        <Link to="/porfolio" className={`mr-2 ${location.pathname === "/porfolio" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>Portfolio</span></Link>
-                        <Link to="/contact-me"  className={`mr-2 ${location.pathname === "/contact-me" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>Contact Me</span></Link>
+                            <Link to="/"  className={`mr-2 ${location.pathname === "/" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>About Me</span></Link>
+                            <Link to="/portfolio" className={`mr-2 ${location.pathname === "/portfolio" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>Portfolio</span></Link>
+                            <Link to="/contact-me"  className={`mr-2 ${location.pathname === "/contact-me" ? "text-neutral-100 border-b border-neutral-400 border-opacity-50 " : "text-neutral-400 hover:text-neutral-100"}`} > <span>Contact Me</span></Link>
                         </div>
                     </div>
                     <div className="flex"> 
