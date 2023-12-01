@@ -5,7 +5,6 @@ import {Route, Routes} from 'react-router-dom'
 import { Porfolio } from './pages/porfolio/Porfolio'
 import { ContactMe } from './pages/contact me/ContactMe'
 import { Footer } from './layout/Footer'
-
 function App() {
 
   return (
