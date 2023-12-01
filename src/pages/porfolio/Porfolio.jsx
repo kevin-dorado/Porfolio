@@ -1,14 +1,10 @@
 import { Result } from "postcss"
-import { Certifications } from "../../utilities/Certifications"
+
 import { CardProject } from "../../utilities/CardProject";
 export const Porfolio = () =>{
     return(
         <>
-            <section className="mt-16">
-                <h1  className="text-neutral-100 text-2xl
-                mb-7 font-semibold" > Portfolio 📖</h1>
-                <p className="text-neutral-300 ">In this section, you will find my portfolio, where you can see my CV, titles, and certifications that I have obtained throughout my career. Each of these documents is a testament to my dedication, learning, and growth in various areas of specialization.</p>
-            </section>
+        
             <section className="mt-16">
                 <h2  className="text-neutral-100 text-xl 
                             mb-4 font-semibold mt-6" >Projects</h2>
