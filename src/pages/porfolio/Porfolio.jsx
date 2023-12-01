@@ -18,13 +18,6 @@ export const Porfolio = () =>{
                 <CardProject img={"/andreabeautyink.png"} text={" Website created with WIX at the request of a Micro-Blading company, located in the U.S.A. The website has a services section, a gallery of previous works, information about the owner and a FAQ section."} title={"Andrea Beauty Ink."} page={"https://www.andreabeautyink.com/"}/>
             </section>
 
-            {/* <section className="mt-16">
-
-                <Certifications title={"Currículum Vitae"} width={"640"} height={"950"} src={"https://drive.google.com/file/d/1pZdw9oxgaUcEdv1NKo-eXFBGgYL_r1fO/preview"}/>
-
-                <Certifications title={"Full Stack Software Developer Assessment"} width={"640"} height={"550"} src={"https://drive.google.com/file/d/1tNn-3NCwEtmhCbJ__WHeJOAxwkrWCE3h/preview"}/>
-
-            </section> */}
         </>
     )
 }
