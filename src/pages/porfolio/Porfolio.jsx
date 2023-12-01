@@ -1,5 +1,6 @@
 import { Result } from "postcss"
 import { Certifications } from "../../utilities/Certifications"
+import { CardProject } from "../../utilities/CardProject";
 export const Porfolio = () =>{
     return(
         <>
@@ -17,7 +18,6 @@ export const Porfolio = () =>{
                 <CardProject img={"/e.comerce1.png"} text={"This project is an E-commerce page created in Jóvenes A Programar. It was developed using the Bootstrap framework and JavaScript. The page has a static database and utilizes localstorage. The website includes a shopping cart, user profiles, and different product categories."} title={"e.mercado"} page={"https://keviin999-github-1grrqca04-kevindorado2811-gmailcom.vercel.app"}/>
                 <CardProject img={"/andreabeautyink.png"} text={" Website created with WIX at the request of a Micro-Blading company, located in the U.S.A. The website has a services section, a gallery of previous works, information about the owner and a FAQ section."} title={"Andrea Beauty Ink."} page={"https://www.andreabeautyink.com/"}/>
             </section>
-
         </>
     )
 }
