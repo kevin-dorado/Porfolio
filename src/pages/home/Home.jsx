@@ -26,8 +26,8 @@ return(
     </section>
     <section className="mt-16">
                 <h1  className="text-neutral-100 text-xl 
-        mb-4 font-semibold " > CV </h1>
-                <p className="text-neutral-300 ">In this section, you will find my</p>
+        mb-4 font-semibold " > Curriculum Vitae </h1>
+                <p className="text-neutral-300 ">In this section, you will find my CV</p>
     </section>
     <section className="mt-16">
                 <Certifications title={"Currículum Vitae"} width={"640"} height={"950"} src={"https://drive.google.com/file/d/1pZdw9oxgaUcEdv1NKo-eXFBGgYL_r1fO/preview"}/>
