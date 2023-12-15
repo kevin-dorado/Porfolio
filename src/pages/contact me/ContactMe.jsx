@@ -14,7 +14,12 @@ export const ContactMe = () =>{
               console.log(error.text);
           });
       };
-    
+
+    const clearText = () =>{
+        document.getElementById("name").value = ""
+        document.getElementById("email").value = ""
+        document.getElementById("text").value = ""
+    }
     return(
         <>
             <section className="mt-16">
@@ -29,24 +34,27 @@ export const ContactMe = () =>{
                         <div className="flex justify-between">
                             <div className="w-1/2 mr-5 ">
                                 <label className="block" htmlFor="">Name</label>
-                                <input className="text w-full rounded-md  px-2 text-neutral-800" type="text" name="user_name" />
+                                <input id='name' className="text w-full rounded-md  px-2 text-neutral-800" type="text" name="user_name" />
                             </div>
                             <div className="w-1/2">
                                 <label className="block" htmlFor="">Email</label>
-                                <input className="w-full rounded-md px-2 text-neutral-800" type="email" name="user_email" />
+                                <input id='email' className="w-full rounded-md px-2 text-neutral-800" type="email" name="user_email" />
                             </div>
                         </div>
                         <div className="mt-5">
                             <label  className="block" htmlFor="">Message</label>
-                            <textarea  className="resize-none w-full pb-5 rounded-md  px-2 text-neutral-800 " type="text" name="message" />
+                            <textarea id='text'  className="resize-none w-full pb-5 rounded-md  px-2 text-neutral-800 " type="text" name="message" />
                         </div>
                         
                         <div className="flex justify-end mt-4">
-                            <button className=" p-1 px-8 text-neutral-100 bg-neutral-800 hover:bg-[#111010] border-2  border-neutral-700 rounded-xl " value="Send">
+                            <button onClick={clearText} className=" p-1 px-8 text-neutral-100 bg-neutral-800 hover:bg-[#111010] border-2  border-neutral-700 rounded-xl " value="Send">
                             Send
                             </button>
+                            <p></p>
                         </div>
-                            
+                        <div id='thanks'>
+
+                        </div>
                     </form>
                 </div>
             </section>

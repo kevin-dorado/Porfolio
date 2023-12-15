@@ -1,4 +1,4 @@
-import { Result } from "postcss"
+
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { DiJavascript1,DiReact,DiBootstrap,DiJava,DiVisualstudio } from "react-icons/di";
 import { ToolTip } from "../../utilities/ToolTip";
@@ -15,7 +15,7 @@ return(
     <section className="mt-16">
         <h2  className="text-neutral-100 text-xl 
         mb-4 font-semibold " >Skills</h2>
-        <div className="flex">
+        <div className=" justify-center  md:justify-normal flex-wrap flex">
             <ToolTip icon={<DiJavascript1 size={25} />} tec={"Javascript"} tc={"text-yellow-300"} href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}/>
             <ToolTip icon={<DiReact size={25} />} tec={"React"} tc={"text-cyan-300"} href={"https://es.react.dev/"}/>
             <ToolTip icon={<BiLogoTailwindCss size={25} />} tec={"Tailwind"} tc={"text-cyan-300"} href={"https://tailwindcss.com/"}/>
@@ -30,7 +30,7 @@ return(
                 <p className="text-neutral-300 ">In this section, you will find my CV</p>
     </section>
     <section className="mt-16">
-                <Certifications title={"Currículum Vitae"} width={"640"} height={"950"} src={"https://drive.google.com/file/d/1pZdw9oxgaUcEdv1NKo-eXFBGgYL_r1fO/preview"}/>
+                <Certifications title={"Currículum Vitae"} width={"100"} height={"100"} src={"https://drive.google.com/file/d/1pZdw9oxgaUcEdv1NKo-eXFBGgYL_r1fO/preview"}/>
     </section> 
 </>
 )
