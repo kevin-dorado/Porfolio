@@ -1,24 +1,43 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+
 
 export const ContactMe = () =>{
     const form = useRef();
+    const [showThanks, setShowThanks] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_qvggggs', 'template_hcw5v2d', form.current, '_-87Hg7VmOwKkNu3Y')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+        emailjs.sendForm('service_wtuxamv', 'template_hcw5v2d', form.current, '_-87Hg7VmOwKkNu3Y')
+            .then((result) => {
+                console.log(result.text);
+                setShowThanks(true);
+        }, (error) => {
+            console.log(error.text);
+            });
+    };
+
+    useEffect(() => {
+        if (showThanks) {
+            console.log('showThanks is true, setting timer');
+            const timer = setTimeout(() => {
+                setShowThanks(false);
+                console.log('Timer finished, showThanks should be false now');
+            }, 4000); 
+
+            return () => clearTimeout(timer);
+        }
+    }, [showThanks]);
+
 
     const clearText = () =>{
-        document.getElementById("name").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("text").value = ""
+        const timer = setTimeout(() => {
+            document.getElementById("name").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("text").value = ""
+        }, 1000);
+        
     }
     return(
         <>
@@ -52,10 +71,10 @@ export const ContactMe = () =>{
                             </button>
                             <p></p>
                         </div>
-                        <div id='thanks'>
-
-                        </div>
                     </form>
+                    <div id='thanks'>
+                            {showThanks && <p className='text-green-700'>Thank you for your message!</p>}
+                    </div>
                 </div>
             </section>
 
