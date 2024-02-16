@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className=' flex min-h-screen dark:bg-[#111010]'>
+      <div className=' flex min-h-screen bg-[#111010]'>
         <div className='p-5 md:p-0 max-w-2xl mx-auto flex-auto mt-8'>
           <Nav/>
             <Routes>
